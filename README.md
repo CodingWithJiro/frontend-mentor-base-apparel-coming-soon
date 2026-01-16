@@ -120,9 +120,9 @@ A **Google Lighthouse** audit was conducted on the final version of this project
 
 Created by **Elmar Chavez**
 
-Month/Year: **October 2025**
+Month/Year: **January 2026**
 
-Journey: **7<sup>th</sup>** month of learning _frontend web development_.
+Journey: **10<sup>th</sup>** month of learning _frontend web development_.
 
 <!--
 

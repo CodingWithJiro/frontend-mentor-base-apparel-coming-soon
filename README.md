@@ -70,29 +70,31 @@ INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
 
 ---
 
-## Tech Used
+## Core Technologies
 
 - HTML5
 - CSS3
-- JavaScript
-- Git
-- GitHub
-- Netlify
+- JavaScript (ES6+)
 
----
-
-## Libraries and Frameworks
+## Frameworks & Libraries
 
 - React
-- TailwindCSS
+- Tailwind CSS
 
----
+## Tooling & Build
 
-## Design Reference & Tools
-
-- JPG design image
-- PerfectPixel
 - Vite
+- Git
+- GitHub
+
+## Design Reference
+
+- Frontend Mentor (JPG)
+- PerfectPixel
+
+## Deployment
+
+- Netlify
 
 ---
 

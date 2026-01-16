@@ -51,11 +51,11 @@ INSERT LIST OF PROJECT FEATURES
 
 ## Development Workflow
 
-[![Network Graph](./assets/img/network-graph.png)](https://github.com/CodingWithJiro/REPO_NAME/network)
+[![Network Graph](./assets/img/network-graph.png)](https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon/network)
 
 > Click to view the full branch and merge history
 
-This project adapts a **[granular branching and commit workflow](https://github.com/CodingWithJiro/REPO_NAME/network)** to simulate team collaboration. Each feature, fix, documentation, and chore is tracked in its own branch with descriptive commits.
+This project adapts a **[granular branching and commit workflow](https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon/network)** to simulate team collaboration. Each feature, fix, documentation, and chore is tracked in its own branch with descriptive commits.
 
 Each **[pull request](REPO_PULL_REQUEST_CLOSED_LINK)** I created contains a clear description, change list, screenshots for UI updates, and reviewer notes.
 

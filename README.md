@@ -80,11 +80,18 @@ INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
 
 ---
 
+## Libraries and Frameworks
+
+- React
+- TailwindCSS
+
+---
+
 ## Design Reference & Tools
 
 - JPG design image
-- Figma
 - PerfectPixel
+- Vite
 
 ---
 

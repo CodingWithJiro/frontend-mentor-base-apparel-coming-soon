@@ -100,8 +100,35 @@ INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
 
 ## How to Run
 
-1. Clone the repository
-2. Open `index.html` in your browser
+> Requires Node.js (v18+ recommended)
+
+1. Open a terminal (Bash, Command Prompt, or PowerShell)
+
+2. Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+3. Navigate to the project directory
+
+```bash
+cd REPO_NAME
+```
+
+4. Install dependencies
+
+```bash
+npm install
+```
+
+5. Start the development server
+
+```bash
+npm run dev
+```
+
+6. Open the local URL shown in the terminal (usually http://localhost:5173)
 
 ---
 

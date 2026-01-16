@@ -24,12 +24,12 @@
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%2010-blue)
 ![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-base-apparel-coming-soon&left_text=repo%20views)
 
-## ADD PROJECT SUBTITLE
+## Base Apparel Announcements Email Subscription Page
 
-| _Mobile Preview (375x812)_                                   | _Desktop Preview (1440x960)_                                    |
-| ------------------------------------------------------------ | --------------------------------------------------------------- |
-| ![Mobile](./assets/img/site-preview-mobile_375x812.png)      | ![Desktop](./assets/img/site-preview-desktop_1440x960.png)      |
-| ![Mobile](./assets/img/site-preview-mobile-dark_375x812.png) | ![Desktop](./assets/img/site-preview-desktop-dark_1440x960.png) |
+| _Mobile Preview (375x812)_                                  | _Desktop Preview (1440x960)_                                   |
+| ----------------------------------------------------------- | -------------------------------------------------------------- |
+| ![Mobile](/public/img/site-preview-mobile_375x812.png)      | ![Desktop](/public/img/site-preview-desktop_1440x960.png)      |
+| ![Mobile](/public/img/site-preview-mobile-dark_375x812.png) | ![Desktop](/public/img/site-preview-desktop-dark_1440x960.png) |
 
 INSERT A BRIEF DESCRIPTION OF THE PROJECT
 

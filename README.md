@@ -153,10 +153,3 @@ Created by **Elmar Chavez**
 Month/Year: **January 2026**
 
 Journey: **10<sup>th</sup>** month of learning _frontend web development_.
-
-<!--
-
-FRONTEND MENTOR TAGS:
-react vite tailwind html css javascript vscode git github netlify 10th-month frontend-mentor project perfectpixel lighthouse theme-toggle
-
--->

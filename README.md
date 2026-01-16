@@ -52,7 +52,7 @@ INSERT LIST OF PROJECT FEATURES
 
 ## Development Workflow
 
-[![Network Graph](./assets/img/network-graph.png)](https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon/network)
+[![Network Graph](public/img/network-graph.png)](https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon/network)
 
 > Click to view the full branch and merge history
 

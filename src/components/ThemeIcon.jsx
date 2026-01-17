@@ -1,5 +1,5 @@
-import ThemeIconLight from "../ThemeIconLight/ThemeIconLight";
-import ThemeIconDark from "../ThemeIconDark/ThemeIconDark";
+import ThemeIconLight from "./ThemeIconLight";
+import ThemeIconDark from "./ThemeIconDark";
 
 const ThemeIcon = ({ theme }) => {
   const isLightTheme = theme === "light";

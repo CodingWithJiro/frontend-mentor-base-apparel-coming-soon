@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import ThemeIcon from "../ThemeIcon/ThemeIcon";
-import ThemeButton from "../ThemeButton/ThemeButton";
+import ThemeIcon from "./ThemeIcon";
+import ThemeButton from "./ThemeButton";
 
 const Theme = () => {
   const [theme, setTheme] = useState(() => {

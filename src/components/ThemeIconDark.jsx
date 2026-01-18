@@ -1,12 +1,10 @@
-import styles from "./theme-icon-dark.module.css";
-
 const ThemeIconDark = () => {
   return (
     <svg
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={styles.icon}
+      className="w-4.5 text-(--COLOR-THEME-ICON) opacity-100"
       aria-hidden="true"
     >
       <path

@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import HeroImage from "./components/HeroImage";
+import Main from "./components/Main";
 import SkipLink from "./components/SkipLink";
 
 const App = () => {
@@ -7,7 +7,7 @@ const App = () => {
     <>
       <SkipLink />
       <Header />
-      <HeroImage />
+      <Main />
     </>
   );
 };

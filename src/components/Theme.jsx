@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
-import styles from "./theme.module.css";
-import ThemeIcon from "../ThemeIcon/ThemeIcon";
-import ThemeButton from "../ThemeButton/ThemeButton";
+import ThemeIcon from "./ThemeIcon";
+import ThemeButton from "./ThemeButton";
 
 const Theme = () => {
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
+      "(prefers-color-scheme: dark)",
     ).matches;
 
     if (savedTheme === "light" || savedTheme === "dark") {
@@ -40,7 +39,7 @@ const Theme = () => {
   };
 
   return (
-    <div className={styles.theme}>
+    <div className="absolute top-4 right-4 flex items-center justify-center gap-2 rounded-full bg-transparent px-4 py-2 shadow-(--BOX-SHADOW-THEME) motion-safe:transition-shadow motion-safe:duration-300 motion-safe:ease-in-out">
       <ThemeIcon theme={theme} />
       <ThemeButton onThemeChange={handleThemeChange} theme={theme} />
     </div>

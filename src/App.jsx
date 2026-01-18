@@ -1,11 +1,13 @@
-import CompanyLogo from "./components/CompanyLogo";
-import Theme from "./components/Theme";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import SkipLink from "./components/SkipLink";
 
 const App = () => {
   return (
     <>
-      <Theme />
-      <CompanyLogo />
+      <SkipLink />
+      <Header />
+      <Main />
     </>
   );
 };

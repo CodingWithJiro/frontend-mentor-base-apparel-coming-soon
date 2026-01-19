@@ -1,5 +1,9 @@
 const ErrorMessage = () => {
-  return <p>Please provide a valid email</p>;
+  return (
+    <p id="email-error" role="alert">
+      Please provide a valid email
+    </p>
+  );
 };
 
 export default ErrorMessage;

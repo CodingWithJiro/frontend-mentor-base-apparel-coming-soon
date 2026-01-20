@@ -1,6 +1,7 @@
 const SubmitButton = ({ status }) => {
   return (
     <button
+      className="absolute top-0 right-0 h-full cursor-pointer rounded-full bg-(image:--GRADIENT-BUTTON) px-6.5 shadow-(--BOX-SHADOW-BUTTON) hover:bg-(--PINK-200) hover:bg-none"
       type="submit"
       aria-label="Submit email to subscribe to the latest news on Base Apparel"
     >
@@ -19,7 +20,12 @@ const SubmitButton = ({ status }) => {
       </svg>
 
       {status === "error" && (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <svg
+          className="absolute top-0 left-0 translate-x-[-150%] translate-y-[50%]"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
           <g fill="none" fillRule="evenodd">
             <circle cx="12" cy="12" r="12" fill="#F96464" />
             <path

@@ -4,7 +4,7 @@ import Theme from "./Theme";
 
 const Header = () => {
   return (
-    <header>
+    <header className="px-8 py-6.5">
       <HeaderTitle />
       <CompanyLogo />
       <Theme />

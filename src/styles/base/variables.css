@@ -2,12 +2,24 @@
 /* CHANGE THE DATA BELOW AS NEEDED */
 :root {
   /* FONTS */
-  --FF: "Arial", sans-serif;
+  --FF: "Josefin Sans", sans-serif;
   --FS: 1rem;
 
   /* COLORS */
-  --BGCOLOR: #fff;
+  --BGCOLOR: hsl(0, 100%, 98%);
   --FONT-COLOR: #000;
+  --PINK-200: hsl(0, 80%, 90%);
+  --PINK-300: hsl(0, 74%, 74%);
+  --PINK-400: hsl(0, 36%, 70%);
+  --RED-500: hsl(0, 93%, 68%);
+  --GREY-900: hsl(0, 6%, 24%);
+  --SHADOW-COLOR-BUTTON: 0deg 27% 79%;
+  --GRADIENT-COLOR-FROM: hsl(0, 0%, 100%);
+  --GRADIENT-COLOR-TO: hsl(0, 100%, 98%);
+  --GRADIENT-COLOR-FROM-BUTTON: hsl(0, 80%, 86%);
+  --GRADIENT-COLOR-TO-BUTTON: hsl(0, 74%, 74%);
+  --GRADIENT-COLOR-FROM-BUTTON-HOVER: hsl(0, 80%, 86%);
+  --GRADIENT-COLOR-TO-BUTTON-HOVER: hsl(0, 80%, 86%);
 
   /* THEME TOGGLE COLORS */
   --COLOR-THEME-ICON: #333;
@@ -18,6 +30,32 @@
 
   /* SHADOWS */
   --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
+  --BOX-SHADOW-BUTTON:
+    0px 1px 1.1px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
+    0px 4.4px 5px -0.4px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
+    0px 7.9px 8.9px -0.7px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
+    0px 12.8px 14.4px -1.1px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
+    0.1px 20.2px 22.7px -1.4px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
+    0.1px 31.4px 35.3px -1.8px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
+    0.1px 47.6px 53.6px -2.1px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
+    0.2px 70px 78.8px -2.5px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23);
+
+  /* GRADIENTS */
+  --GRADIENT-BACKGROUND: linear-gradient(
+    135deg,
+    var(--GRADIENT-COLOR-FROM),
+    var(--GRADIENT-COLOR-TO)
+  );
+  --GRADIENT-BUTTON: linear-gradient(
+    135deg,
+    var(--GRADIENT-COLOR-FROM-BUTTON),
+    var(--GRADIENT-COLOR-TO-BUTTON)
+  );
+  --GRADIENT-BUTTON-HOVER: linear-gradient(
+    135deg,
+    var(--GRADIENT-COLOR-FROM-BUTTON-HOVER),
+    var(--GRADIENT-COLOR-TO-BUTTON-HOVER)
+  );
 
   /* TRANSITIONS */
   --TRANSITION-BACKGROUND-COLOR: background-color 0.3s ease-in-out;

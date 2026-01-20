@@ -2,7 +2,14 @@ const CompanyLogo = () => {
   const gradientId = "company-logo-gradient";
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="158" height="33" fill="none">
+    <svg
+      className="max-w-25"
+      xmlns="http://www.w3.org/2000/svg"
+      width="158"
+      height="33"
+      viewBox="0 0 158 33"
+      fill="none"
+    >
       <defs>
         <linearGradient id={gradientId} x1="0%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#F8BFBF" />

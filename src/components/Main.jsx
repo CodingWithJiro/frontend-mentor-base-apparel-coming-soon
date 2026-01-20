@@ -5,7 +5,10 @@ import MainText from "./MainText";
 
 const Main = () => {
   return (
-    <main id="main">
+    <main
+      className="flex flex-col items-center justify-start font-(family-name:--FF)"
+      id="main"
+    >
       <HeroImage />
       <MainText />
       <Form />

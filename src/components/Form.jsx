@@ -25,8 +25,6 @@ const Form = () => {
     } else {
       setStatus("error");
     }
-
-    // TODO: BORDER CHANGES TO RED WHEN IT IS IN ERROR, TO BE DONE AFTER TAILWIND CSS STYLING
   };
   const handleChange = (e) => {
     const inputEmail = e.target.value;
@@ -40,23 +38,29 @@ const Form = () => {
     const isNotEmpty = email.length > 0;
 
     if (isInvalid && isNotEmpty) {
-      // TODO: I WILL NOT AGGRESSIVELY SET THE STATUS TO ERROR THIS TIME BUT WILL ONLY TRIGGER RED BORDERS SO AS TO GUIDE THE USER THAT THE CURRENT EMAIL WHEN THEY LOSE FOCUS ON THE INPUT IS AN INVALID EMAIL. ONLY MAKE THE LOGO AND ERROR MESSAGE APPEAR WHEN THE USER ACTUALLY SUBMIT THE EMAIL INPUT
+      setStatus("warning");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
-      <InputEmail
-        onChange={handleChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        email={email}
-        status={status}
-      />
-      <SubmitButton status={status} />
-      {status === "error" && <ErrorMessage />}
-      {status === "success" && <SuccessMessage />}
-    </form>
+    <div className="flex w-full items-center justify-center px-8 pb-10">
+      <form
+        className="relative flex w-full flex-col items-center justify-center"
+        onSubmit={handleSubmit}
+        noValidate
+      >
+        <InputEmail
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          email={email}
+          status={status}
+        />
+        <SubmitButton status={status} />
+        {status === "error" && <ErrorMessage />}
+        {status === "success" && <SuccessMessage />}
+      </form>
+    </div>
   );
 };
 

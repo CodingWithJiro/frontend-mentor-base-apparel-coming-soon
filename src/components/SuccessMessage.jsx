@@ -1,5 +1,12 @@
 const SuccessMessage = () => {
-  return <p id="email-success">Email successfully submitted!</p>;
+  return (
+    <p
+      className="absolute -bottom-7 left-0 w-full px-5.5 text-sm tracking-tight text-(--PINK-300)"
+      id="email-success"
+    >
+      Email successfully submitted!
+    </p>
+  );
 };
 
 export default SuccessMessage;

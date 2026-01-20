@@ -3,7 +3,12 @@ const BackgroundPattern = () => {
   const gradientIdB = "gradient-id-b";
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="830" height="800">
+    <svg
+      className="hidden w-full md:block"
+      xmlns="http://www.w3.org/2000/svg"
+      width="830"
+      height="800"
+    >
       <defs>
         <linearGradient
           id={gradientIdA}

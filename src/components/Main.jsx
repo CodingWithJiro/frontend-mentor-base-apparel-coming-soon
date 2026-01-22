@@ -5,7 +5,7 @@ import MainText from "./MainText";
 const Main = () => {
   return (
     <main
-      className="flex flex-col items-center justify-start font-(family-name:--FF)"
+      className="flex flex-col items-center justify-start font-(family-name:--FF) md:items-start"
       id="main"
     >
       <HeroImageMobile />

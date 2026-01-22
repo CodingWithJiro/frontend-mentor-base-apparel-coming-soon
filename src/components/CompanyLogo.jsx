@@ -3,7 +3,7 @@ const CompanyLogo = () => {
 
   return (
     <svg
-      className="max-w-25"
+      className="max-w-25 md:max-w-40"
       xmlns="http://www.w3.org/2000/svg"
       width="158"
       height="33"

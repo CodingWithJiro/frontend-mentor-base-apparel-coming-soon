@@ -43,9 +43,9 @@ const Form = () => {
   };
 
   return (
-    <div className="flex w-full items-center justify-center px-8 pb-10">
+    <div className="flex w-full items-center justify-center px-8 pb-10 md:justify-start md:px-[clamp(2rem,-7.5rem+19.7917vw,10.3125rem)]">
       <form
-        className="relative flex w-full flex-col items-center justify-center"
+        className="relative flex w-full flex-col items-center justify-center md:max-w-111.25"
         onSubmit={handleSubmit}
         noValidate
       >

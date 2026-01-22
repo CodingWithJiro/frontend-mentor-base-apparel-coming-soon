@@ -6,8 +6,3 @@
   --BORDER-COLOR-THEME-BUTTON: #666;
   --SHADOW-COLOR-THEME: rgba(255, 255, 255, 0.3);
 }
-
-.hidden {
-  opacity: 0;
-  display: none;
-}

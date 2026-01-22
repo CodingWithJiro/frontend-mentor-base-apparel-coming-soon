@@ -1,18 +1,16 @@
-import BackgroundPattern from "./BackgroundPattern";
 import Form from "./Form";
-import HeroImage from "./HeroImage";
+import HeroImageMobile from "./HeroImageMobile";
 import MainText from "./MainText";
 
 const Main = () => {
   return (
     <main
-      className="flex flex-col items-center justify-start font-(family-name:--FF)"
+      className="flex flex-col items-center justify-start font-(family-name:--FF) md:items-start"
       id="main"
     >
-      <HeroImage />
+      <HeroImageMobile />
       <MainText />
       <Form />
-      <BackgroundPattern />
     </main>
   );
 };

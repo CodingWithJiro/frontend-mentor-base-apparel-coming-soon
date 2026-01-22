@@ -1,48 +1,6 @@
 const BackgroundPattern = () => {
-  const gradientIdA = "gradient-id-a";
-  const gradientIdB = "gradient-id-b";
-
   return (
-    <svg
-      className="hidden w-full md:block"
-      xmlns="http://www.w3.org/2000/svg"
-      width="830"
-      height="800"
-    >
-      <defs>
-        <linearGradient
-          id={gradientIdA}
-          x1="95.861%"
-          x2="10.913%"
-          y1="2.476%"
-          y2="101.718%"
-        >
-          <stop offset="0%" stop-color="#FFF1F1" />
-          <stop offset="100%" stop-color="#FFF" />
-        </linearGradient>
-        <linearGradient
-          id={gradientIdB}
-          x1="95.937%"
-          x2="10.848%"
-          y1="2.476%"
-          y2="101.718%"
-        >
-          <stop offset="0%" stop-color="#FFF1F1" />
-          <stop offset="100%" stop-color="#FFF" />
-        </linearGradient>
-      </defs>
-      <g fill="none" fill-rule="evenodd">
-        <path
-          fill={`url(#${gradientIdA})`}
-          d="M0 800c48.557-184.991 167.048-301.57 355.473-349.737C543.898 402.096 688.074 252.008 788 0v800H0z"
-          transform="rotate(180 394 400)"
-        />
-        <path
-          fill={`url(#${gradientIdB})`}
-          d="M413 800c25.696-97.814 88.4-159.455 188.112-184.924C700.824 589.608 777.12 510.25 830 377v423H413z"
-        />
-      </g>
-    </svg>
+    <div className="absolute top-0 left-0 -z-1 hidden h-full w-[57.75%] bg-[url('/src/assets/img/bg-pattern-desktop_830x800.svg')] bg-cover bg-center bg-no-repeat after:pointer-events-none after:absolute after:inset-0 after:bg-[linear-gradient(to_right,transparent_85%,hsl(0,100%,98%)_100%)] after:content-[''] md:block"></div>
   );
 };
 

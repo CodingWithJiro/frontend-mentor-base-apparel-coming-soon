@@ -20,6 +20,7 @@
   --GRADIENT-COLOR-TO-BUTTON: hsl(0, 74%, 74%);
   --GRADIENT-COLOR-FROM-BUTTON-HOVER: hsl(0, 80%, 86%);
   --GRADIENT-COLOR-TO-BUTTON-HOVER: hsl(0, 80%, 86%);
+  --LOGO-TEXT-COLOR: #423a3a;
 
   /* THEME TOGGLE COLORS */
   --COLOR-THEME-ICON: hsl(0, 15%, 45%);
@@ -56,12 +57,13 @@
     var(--GRADIENT-COLOR-FROM-BUTTON-HOVER),
     var(--GRADIENT-COLOR-TO-BUTTON-HOVER)
   );
+  --GRADIENT-PATTERN: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 85%,
+    hsl(0, 100%, 98%) 100%
+  );
 
-  /* TRANSITIONS */
-  --TRANSITION-BACKGROUND-COLOR: background-color 0.3s ease-in-out;
-  --TRANSITION-COLOR: color 0.3s ease-in-out;
-  --TRANSITION-BORDER-COLOR: border-color 0.3s ease-in-out;
-  --TRANSITION-BOX-SHADOW: box-shadow 0.3s ease-in-out;
-  --TRANSITION-OPACITY: opacity 0.3s ease-in-out;
-  --TRANSITION-TRANSFORM-150MS: transform 0.15s ease-in-out;
+  /* IMAGE URL */
+  --BG-PATTERN-URL: url("/src/assets/img/bg-pattern-desktop_830x800.svg");
 }

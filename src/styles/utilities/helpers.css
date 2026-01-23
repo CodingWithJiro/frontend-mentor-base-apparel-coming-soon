@@ -1,8 +1,29 @@
 .dark {
-  --BGCOLOR: #333;
-  --COLOR-THEME-ICON: #f1f1f1;
-  --BGCOLOR-THEME-BUTTON: #222;
-  --BGCOLOR-THEME-BUTTON-AFTER: #f1f1f1;
-  --BORDER-COLOR-THEME-BUTTON: #666;
-  --SHADOW-COLOR-THEME: rgba(255, 255, 255, 0.3);
+  --BGCOLOR: hsl(0, 8%, 12%);
+  --FONT-COLOR: hsl(0, 0%, 92%);
+  --PINK-200: hsl(350, 30%, 22%);
+  --PINK-300: hsl(350, 45%, 55%);
+  --PINK-400: hsl(350, 45%, 55%);
+  --RED-500: hsl(0, 80%, 65%);
+  --GREY-900: hsl(0, 0%, 92%);
+  --SHADOW-COLOR-BUTTON: 0deg 0% 0%;
+  --GRADIENT-COLOR-FROM: hsl(0, 8%, 14%);
+  --GRADIENT-COLOR-TO: hsl(350, 20%, 10%);
+  --GRADIENT-COLOR-FROM-BUTTON: hsl(350, 55%, 55%);
+  --GRADIENT-COLOR-TO-BUTTON: hsl(0, 70%, 60%);
+  --GRADIENT-COLOR-FROM-BUTTON-HOVER: hsl(350, 55%, 60%);
+  --GRADIENT-COLOR-TO-BUTTON-HOVER: hsl(0, 75%, 65%);
+  --LOGO-TEXT-COLOR: #f5f1ef;
+  --COLOR-THEME-ICON: hsl(350, 55%, 68%);
+  --BGCOLOR-THEME-BUTTON: hsl(0, 8%, 18%);
+  --BGCOLOR-THEME-BUTTON-AFTER: hsl(350, 40%, 60%);
+  --BORDER-COLOR-THEME-BUTTON: hsl(0, 0%, 25%);
+  --SHADOW-COLOR-THEME: hsl(0 0% 0% / 0.6);
+  --GRADIENT-PATTERN: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 70%,
+    #181010 100%
+  );
+  --BG-PATTERN-URL: url("/src/assets/img/bg-pattern-desktop-dark_830x800.svg");
 }

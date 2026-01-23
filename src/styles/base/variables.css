@@ -20,16 +20,17 @@
   --GRADIENT-COLOR-TO-BUTTON: hsl(0, 74%, 74%);
   --GRADIENT-COLOR-FROM-BUTTON-HOVER: hsl(0, 80%, 86%);
   --GRADIENT-COLOR-TO-BUTTON-HOVER: hsl(0, 80%, 86%);
+  --LOGO-TEXT-COLOR: #423a3a;
 
   /* THEME TOGGLE COLORS */
-  --COLOR-THEME-ICON: #333;
-  --BGCOLOR-THEME-BUTTON: #f1f1f1;
-  --BGCOLOR-THEME-BUTTON-AFTER: #333;
-  --BORDER-COLOR-THEME-BUTTON: #ccc;
-  --SHADOW-COLOR-THEME: rgba(0, 0, 0, 0.3);
+  --COLOR-THEME-ICON: hsl(0, 15%, 45%);
+  --BGCOLOR-THEME-BUTTON: hsl(0, 0%, 100%);
+  --BGCOLOR-THEME-BUTTON-AFTER: hsl(0, 15%, 45%);
+  --BORDER-COLOR-THEME-BUTTON: hsl(350, 30%, 85%);
+  --SHADOW-COLOR-THEME: hsl(0 10% 20% / 0.32);
 
   /* SHADOWS */
-  --BOX-SHADOW-THEME: 0 0 3px var(--SHADOW-COLOR-THEME);
+  --BOX-SHADOW-THEME: 0 2px 6px var(--SHADOW-COLOR-THEME);
   --BOX-SHADOW-BUTTON:
     0px 1px 1.1px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
     0px 4.4px 5px -0.4px hsl(var(--SHADOW-COLOR-BUTTON) / 0.23),
@@ -56,12 +57,13 @@
     var(--GRADIENT-COLOR-FROM-BUTTON-HOVER),
     var(--GRADIENT-COLOR-TO-BUTTON-HOVER)
   );
+  --GRADIENT-PATTERN: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 85%,
+    hsl(0, 100%, 98%) 100%
+  );
 
-  /* TRANSITIONS */
-  --TRANSITION-BACKGROUND-COLOR: background-color 0.3s ease-in-out;
-  --TRANSITION-COLOR: color 0.3s ease-in-out;
-  --TRANSITION-BORDER-COLOR: border-color 0.3s ease-in-out;
-  --TRANSITION-BOX-SHADOW: box-shadow 0.3s ease-in-out;
-  --TRANSITION-OPACITY: opacity 0.3s ease-in-out;
-  --TRANSITION-TRANSFORM-150MS: transform 0.15s ease-in-out;
+  /* IMAGE URL */
+  --BG-PATTERN-URL: url("/src/assets/img/bg-pattern-desktop_830x800.svg");
 }

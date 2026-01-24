@@ -7,6 +7,7 @@ import SuccessMessage from "./SuccessMessage";
 const Form = () => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("idle");
+  const [shouldShake, setShouldShake] = useState(false);
 
   const isValid = (input) => {
     const emailRegex =
@@ -24,6 +25,7 @@ const Form = () => {
       setStatus("success");
     } else {
       setStatus("error");
+      setShouldShake(true);
     }
   };
   const handleChange = (e) => {
@@ -41,6 +43,9 @@ const Form = () => {
       setStatus("warning");
     }
   };
+  const handleAnimationEnd = () => {
+    setShouldShake(false);
+  };
 
   return (
     <div className="flex w-full items-center justify-center px-8 pb-10 md:justify-start md:px-[clamp(2rem,-7.5rem+19.7917vw,10.3125rem)]">
@@ -53,10 +58,16 @@ const Form = () => {
           onChange={handleChange}
           onFocus={handleFocus}
           onBlur={handleBlur}
+          onAnimationEnd={handleAnimationEnd}
+          shouldShake={shouldShake}
           email={email}
           status={status}
         />
-        <SubmitButton status={status} />
+        <SubmitButton
+          status={status}
+          shouldShake={shouldShake}
+          onAnimationEnd={handleAnimationEnd}
+        />
         {status === "error" && <ErrorMessage />}
         {status === "success" && <SuccessMessage />}
       </form>

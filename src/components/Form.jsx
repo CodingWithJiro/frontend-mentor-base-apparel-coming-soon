@@ -21,6 +21,32 @@ const Form = () => {
 
     return isValidEmail;
   };
+  const getSavedEmails = () => {
+    const savedEmails = JSON.parse(localStorage.getItem("emails")) || [];
+    return savedEmails;
+  };
+  const getNormalizedEmail = (input) => {
+    return input.trim().toLowerCase();
+  };
+  const saveEmail = (input) => {
+    const savedEmails = getSavedEmails();
+    const normalizedEmail = getNormalizedEmail(input);
+    const updatedEmails = [...savedEmails, normalizedEmail];
+    localStorage.setItem("emails", JSON.stringify(updatedEmails));
+  };
+  const isDuplicate = (input) => {
+    const savedEmails = getSavedEmails();
+    const normalizedEmail = getNormalizedEmail(input);
+    return savedEmails.includes(normalizedEmail);
+  };
+  const getRandomDelay = () => {
+    const delay = Math.ceil(Math.random() * 2000 + 1500);
+    return delay;
+  };
+  const removeInputFocus = () => {
+    inputRef.current.blur();
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 

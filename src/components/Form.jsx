@@ -76,7 +76,9 @@ const Form = () => {
     setEmail(inputEmail);
   };
   const handleFocus = () => {
-    setStatus("idle");
+    if (status === "error") {
+      setStatus("idle");
+    }
   };
   const handleBlur = () => {
     const isInvalid = !isValid(email);

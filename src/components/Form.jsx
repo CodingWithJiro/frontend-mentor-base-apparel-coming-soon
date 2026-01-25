@@ -3,6 +3,7 @@ import ErrorMessage from "./ErrorMessage";
 import InputEmail from "./InputEmail";
 import SubmitButton from "./SubmitButton";
 import SuccessMessage from "./SuccessMessage";
+import Loading from "./Loading";
 
 const Form = () => {
   const [email, setEmail] = useState("");

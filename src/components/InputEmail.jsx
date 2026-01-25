@@ -43,6 +43,7 @@ const InputEmail = ({
         aria-invalid={status === "error"}
         aria-describedby={getAriaDescribedBy()}
         placeholder="Email Address"
+        disabled={status === "loading"}
       />
     </>
   );

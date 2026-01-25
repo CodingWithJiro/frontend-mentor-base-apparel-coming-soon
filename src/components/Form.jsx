@@ -16,7 +16,7 @@ const Form = () => {
     const emailRegex =
       /^(?!\.)(?!.*\.\.)([a-z0-9_'+\-.]*)[a-z0-9_'+-]@([a-z0-9][a-z0-9-]*\.)+[a-z]{2,}$/i;
     const isEmpty = input.length === 0;
-    const isCorrect = emailRegex.test(input);
+    const isCorrect = emailRegex.test(input.trim());
     const isValidEmail = !isEmpty && isCorrect;
 
     return isValidEmail;

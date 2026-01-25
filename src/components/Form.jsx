@@ -49,6 +49,7 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    removeInputFocus();
 
     if (isValid(email)) {
       setStatus("success");

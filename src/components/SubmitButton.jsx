@@ -3,6 +3,7 @@ const SubmitButton = ({ status, shouldShake, onAnimationEnd }) => {
     <button
       className={`${shouldShake ? "shake" : ""} absolute top-0 right-0 h-full cursor-pointer rounded-full bg-(image:--GRADIENT-BUTTON) px-6.5 shadow-(--BOX-SHADOW-BUTTON) hover:bg-(--PINK-200) hover:bg-none disabled:pointer-events-none md:px-11`}
       onAnimationEnd={onAnimationEnd}
+      disabled={status === "loading"}
       type="submit"
       aria-label="Submit email to subscribe to the latest news on Base Apparel"
     >

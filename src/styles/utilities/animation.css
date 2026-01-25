@@ -1,0 +1,57 @@
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-4px);
+  }
+  40% {
+    transform: translateX(4px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 0.35s ease-in-out;
+}
+
+@keyframes arc-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes arc-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 120, 200;
+    stroke-dashoffset: -30;
+  }
+
+  100% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: -200;
+  }
+}
+
+.arc-spinner {
+  animation: arc-rotate 1.6s linear infinite;
+  color: var(--RED-500);
+}
+
+.arc-spinner circle {
+  stroke-linecap: round;
+  animation: arc-dash 1.6s ease-in-out infinite;
+}

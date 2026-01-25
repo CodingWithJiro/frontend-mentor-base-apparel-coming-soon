@@ -6,6 +6,7 @@ const InputEmail = ({
   email,
   status,
   shouldShake,
+  inputRef,
 }) => {
   const getInputStyle = () => {
     if (status === "error" || status === "warning") {
@@ -33,6 +34,7 @@ const InputEmail = ({
         type="email"
         id="email"
         name="email"
+        ref={inputRef}
         value={email}
         onChange={onChange}
         onFocus={onFocus}

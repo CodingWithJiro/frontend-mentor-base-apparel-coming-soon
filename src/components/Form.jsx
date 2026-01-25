@@ -51,12 +51,25 @@ const Form = () => {
     e.preventDefault();
     removeInputFocus();
 
-    if (isValid(email)) {
-      setStatus("success");
-    } else {
+    if (!isValid(email)) {
       setStatus("error");
       setShouldShake(true);
+      setErrorType("invalid");
+      return;
     }
+
+    if (isDuplicate(email)) {
+      setStatus("error");
+      setShouldShake(true);
+      setErrorType("duplicate");
+      return;
+    }
+
+    setStatus("loading");
+    setTimeout(() => {
+      saveEmail(email);
+      setStatus("success");
+    }, getRandomDelay());
   };
   const handleChange = (e) => {
     const inputEmail = e.target.value;

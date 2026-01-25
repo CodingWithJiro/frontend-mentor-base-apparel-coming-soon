@@ -116,6 +116,7 @@ const Form = () => {
         />
         {status === "error" && <ErrorMessage error={errorType} />}
         {status === "success" && <SuccessMessage />}
+        {status === "loading" && <Loading />}
       </form>
     </div>
   );

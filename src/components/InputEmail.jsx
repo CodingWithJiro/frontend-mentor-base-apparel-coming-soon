@@ -30,7 +30,7 @@ const InputEmail = ({
         Email address
       </label>
       <input
-        className={`w-full rounded-full border border-solid ${getInputStyle()} ${shouldShake ? "shake" : ""} px-5.5 py-[0.7rem] placeholder:text-sm placeholder:text-(--PINK-400) placeholder:opacity-50 focus-visible:outline-hidden motion-safe:transition-colors motion-safe:duration-300 motion-safe:ease-in-out motion-safe:placeholder:transition-colors motion-safe:placeholder:duration-300 motion-safe:placeholder:ease-in-out md:px-8 md:py-[0.9rem] md:placeholder:text-[1rem]`}
+        className={`w-full rounded-full border border-solid ${getInputStyle()} ${shouldShake ? "shake" : ""} py-[0.7rem] pr-16.5 pl-5.5 placeholder:text-sm placeholder:text-(--PINK-400) placeholder:opacity-50 focus-visible:outline-hidden disabled:pointer-events-none motion-safe:transition-colors motion-safe:duration-300 motion-safe:ease-in-out motion-safe:placeholder:transition-colors motion-safe:placeholder:duration-300 motion-safe:placeholder:ease-in-out md:py-[0.9rem] md:pr-25 md:pl-8 md:placeholder:text-[1rem]`}
         type="email"
         id="email"
         name="email"

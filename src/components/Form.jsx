@@ -114,7 +114,7 @@ const Form = () => {
           shouldShake={shouldShake}
           onAnimationEnd={handleAnimationEnd}
         />
-        {status === "error" && <ErrorMessage />}
+        {status === "error" && <ErrorMessage error={errorType} />}
         {status === "success" && <SuccessMessage />}
       </form>
     </div>

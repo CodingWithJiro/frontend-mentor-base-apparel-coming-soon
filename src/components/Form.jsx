@@ -107,6 +107,7 @@ const Form = () => {
           shouldShake={shouldShake}
           email={email}
           status={status}
+          inputRef={inputRef}
         />
         <SubmitButton
           status={status}

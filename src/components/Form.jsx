@@ -9,6 +9,8 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("idle");
   const [shouldShake, setShouldShake] = useState(false);
+  const [errorType, setErrorType] = useState(null);
+  const inputRef = useRef(null);
 
   const isValid = (input) => {
     const emailRegex =

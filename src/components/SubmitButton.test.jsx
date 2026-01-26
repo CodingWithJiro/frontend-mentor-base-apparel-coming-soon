@@ -22,4 +22,14 @@ describe("SubmitButton", () => {
 
     expect(button).toHaveClass("shake");
   });
+
+  test("show error icon when status is error", () => {
+    render(<SubmitButton status="error" />);
+
+    const errorIcon = screen.getByRole("img", {
+      name: /error/i,
+    });
+
+    expect(errorIcon).toBeInTheDocument();
+  });
 });

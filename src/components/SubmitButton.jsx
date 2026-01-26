@@ -28,7 +28,8 @@ const SubmitButton = ({ status, shouldShake, onAnimationEnd }) => {
           width="24"
           height="24"
           aria-hidden="true"
-          aria-label="error-icon"
+          aria-label="Error icon"
+          role="img"
         >
           <g fill="none" fillRule="evenodd">
             <circle cx="12" cy="12" r="12" fill="#F96464" />

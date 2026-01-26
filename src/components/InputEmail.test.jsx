@@ -35,4 +35,12 @@ describe("InputEmail", () => {
 
     expect(input).toHaveAttribute("aria-describedby", "email-error");
   });
+
+  test("update aria-describedby to email-success when status is success", () => {
+    render(<InputEmail status="success" />);
+
+    const input = screen.getByLabelText(inputRegex);
+
+    expect(input).toHaveAttribute("aria-describedby", "email-success");
+  });
 });

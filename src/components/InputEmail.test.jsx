@@ -12,7 +12,7 @@ describe("InputEmail", () => {
     expect(input).toHaveClass("shake");
   });
 
-  test("disable input element when status is loading", () => {
+  test("disables input when status is loading", () => {
     render(<InputEmail status="loading" />);
 
     const input = screen.getByLabelText(inputRegex);
@@ -20,7 +20,7 @@ describe("InputEmail", () => {
     expect(input).toBeDisabled();
   });
 
-  test("update aria-invalid to true when status is error", () => {
+  test("updates aria-invalid to true when status is error", () => {
     render(<InputEmail status="error" />);
 
     const input = screen.getByLabelText(inputRegex);
@@ -28,7 +28,7 @@ describe("InputEmail", () => {
     expect(input).toHaveAttribute("aria-invalid", "true");
   });
 
-  test("update aria-describedby to email-error when status is error", () => {
+  test("updates aria-describedby to email-error when status is error", () => {
     render(<InputEmail status="error" />);
 
     const input = screen.getByLabelText(inputRegex);
@@ -36,7 +36,7 @@ describe("InputEmail", () => {
     expect(input).toHaveAttribute("aria-describedby", "email-error");
   });
 
-  test("update aria-describedby to email-success when status is success", () => {
+  test("updates aria-describedby to email-success when status is success", () => {
     render(<InputEmail status="success" />);
 
     const input = screen.getByLabelText(inputRegex);

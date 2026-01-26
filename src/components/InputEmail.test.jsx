@@ -19,4 +19,12 @@ describe("InputEmail", () => {
 
     expect(input).toBeDisabled();
   });
+
+  test("update aria-invalid to true when status is error", () => {
+    render(<InputEmail status="error" />);
+
+    const input = screen.getByLabelText(inputRegex);
+
+    expect(input).toHaveAttribute("aria-invalid", "true");
+  });
 });

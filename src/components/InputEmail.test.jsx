@@ -27,4 +27,12 @@ describe("InputEmail", () => {
 
     expect(input).toHaveAttribute("aria-invalid", "true");
   });
+
+  test("update aria-describedby to email-error when status is error", () => {
+    render(<InputEmail status="error" />);
+
+    const input = screen.getByLabelText(inputRegex);
+
+    expect(input).toHaveAttribute("aria-describedby", "email-error");
+  });
 });

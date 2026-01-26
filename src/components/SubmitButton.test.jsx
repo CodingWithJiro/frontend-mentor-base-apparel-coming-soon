@@ -12,4 +12,14 @@ describe("SubmitButton", () => {
 
     expect(button).toBeDisabled();
   });
+
+  test("adds shake animation when shouldShake is true", () => {
+    render(<SubmitButton shouldShake={true} />);
+
+    const button = screen.getByRole("button", {
+      name: /submit email/i,
+    });
+
+    expect(button).toHaveClass("shake");
+  });
 });

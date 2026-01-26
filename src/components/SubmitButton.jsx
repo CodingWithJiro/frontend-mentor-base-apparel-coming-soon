@@ -27,7 +27,6 @@ const SubmitButton = ({ status, shouldShake, onAnimationEnd }) => {
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
-          aria-hidden="true"
           aria-label="Error icon"
           role="img"
         >

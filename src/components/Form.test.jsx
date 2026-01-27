@@ -18,4 +18,18 @@ describe("Form", () => {
 
     expect(errorMessage).toBeInTheDocument();
   });
+
+  test("shows loading message when submitting a valid email", async () => {
+    const user = userEvent.setup();
+
+    render(<Form />);
+
+    const input = screen.getByLabelText(/email address/i);
+
+    await user.type(input, "correct@email.com{Enter}");
+
+    const loadingMessage = await screen.findByText(/sending/i);
+
+    expect(loadingMessage).toBeInTheDocument();
+  });
 });

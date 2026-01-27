@@ -32,4 +32,22 @@ describe("Form", () => {
 
     expect(loadingMessage).toBeInTheDocument();
   });
+
+  test("shows success message when submitting a valid email", async () => {
+    const user = userEvent.setup();
+
+    render(<Form />);
+
+    const input = screen.getByLabelText(/email address/i);
+
+    await user.type(input, "correct@email.com{Enter}");
+
+    const successMessage = await screen.findByText(
+      /email success/i,
+      {},
+      { timeout: 3000 },
+    );
+
+    expect(successMessage).toBeInTheDocument();
+  });
 });

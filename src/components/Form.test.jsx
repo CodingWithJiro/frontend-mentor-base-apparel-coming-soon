@@ -70,4 +70,17 @@ describe("Form", () => {
 
     expect(duplicateMessage).toBeInTheDocument();
   });
+
+  test("updates input border and outline to red when typing an invalid email and then tabbing out", async () => {
+    const user = userEvent.setup();
+
+    render(<Form />);
+
+    const input = screen.getByLabelText(/email address/i);
+
+    await user.type(input, "unfinished.email");
+    await user.tab();
+
+    expect(input).toHaveAttribute("aria-invalid", "true");
+  });
 });

@@ -6,6 +6,7 @@ const ThemeIconLight = () => {
       xmlns="http://www.w3.org/2000/svg"
       className="w-4.5 text-(--COLOR-THEME-ICON) opacity-100"
       aria-hidden="true"
+      data-testid="theme-icon-light"
     >
       <path
         fill="currentColor"

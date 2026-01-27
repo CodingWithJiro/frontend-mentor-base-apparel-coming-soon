@@ -54,4 +54,20 @@ describe("Form", () => {
 
     expect(successMessage).toBeInTheDocument();
   });
+
+  test("shows duplicate error message when submitting a duplicate email", async () => {
+    const user = userEvent.setup();
+
+    localStorage.setItem("emails", JSON.stringify(["duplicate@email.com"]));
+
+    render(<Form />);
+
+    const input = screen.getByLabelText(/email address/i);
+
+    await user.type(input, "duplicate@email.com{Enter}");
+
+    const duplicateMessage = screen.getByText(/email already sent/i);
+
+    expect(duplicateMessage).toBeInTheDocument();
+  });
 });

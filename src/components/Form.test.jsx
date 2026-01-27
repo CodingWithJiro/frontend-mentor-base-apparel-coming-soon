@@ -3,6 +3,10 @@ import userEvent from "@testing-library/user-event";
 import Form from "./Form";
 
 describe("Form", () => {
+  afterEach(() => {
+    localStorage.clear();
+  });
+
   test("shows error message when submitting an invalid email", async () => {
     const user = userEvent.setup();
 

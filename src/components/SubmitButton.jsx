@@ -27,6 +27,8 @@ const SubmitButton = ({ status, shouldShake, onAnimationEnd }) => {
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
+          aria-label="Error icon"
+          role="img"
         >
           <g fill="none" fillRule="evenodd">
             <circle cx="12" cy="12" r="12" fill="#F96464" />

@@ -76,7 +76,7 @@ const Form = () => {
     setEmail(inputEmail);
   };
   const handleFocus = () => {
-    if (status === "error") {
+    if (status === "warning" || status === "error") {
       setStatus("idle");
     }
   };
@@ -97,6 +97,7 @@ const Form = () => {
       <form
         className="relative flex w-full flex-col items-center justify-center md:max-w-111.25"
         onSubmit={handleSubmit}
+        aria-label="Email subscription form for Base Apparel's updates"
         noValidate
       >
         <InputEmail

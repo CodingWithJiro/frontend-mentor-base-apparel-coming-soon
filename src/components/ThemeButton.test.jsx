@@ -10,4 +10,13 @@ describe("ThemeButton", () => {
     expect(button).toHaveAttribute("aria-label", "Switch to dark theme");
     expect(button).toHaveAttribute("aria-pressed", "false");
   });
+
+  test("shows correct label and pressed state in dark theme", () => {
+    render(<ThemeButton theme="dark" />);
+
+    const button = screen.getByRole("button");
+
+    expect(button).toHaveAttribute("aria-label", "Switch to light theme");
+    expect(button).toHaveAttribute("aria-pressed", "true");
+  });
 });

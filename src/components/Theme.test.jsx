@@ -21,4 +21,17 @@ describe("Theme", () => {
 
     expect(root).toHaveClass("dark");
   });
+
+  test("loads prefers media theme if there is no saved theme from localStorage", () => {
+    window.matchMedia = vi.fn().mockReturnValue({
+      media: "(prefers-color-scheme: dark)",
+      matches: true,
+    });
+
+    render(<Theme />);
+
+    const root = document.documentElement;
+
+    expect(root).toHaveClass("dark");
+  });
 });

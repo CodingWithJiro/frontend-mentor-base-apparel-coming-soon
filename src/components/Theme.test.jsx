@@ -50,10 +50,12 @@ describe("Theme", () => {
     const button = screen.getByRole("button");
 
     expect(root).not.toHaveClass("dark");
+    expect(localStorage.getItem("theme")).toBe("light");
 
     await user.click(button);
 
     expect(root).toHaveClass("dark");
+    expect(localStorage.getItem("theme")).toBe("dark");
   });
 
   test("toggles theme to light on button click", async () => {
@@ -71,9 +73,11 @@ describe("Theme", () => {
     const button = screen.getByRole("button");
 
     expect(root).toHaveClass("dark");
+    expect(localStorage.getItem("theme")).toBe("dark");
 
     await user.click(button);
 
     expect(root).not.toHaveClass("dark");
+    expect(localStorage.getItem("theme")).toBe("light");
   });
 });

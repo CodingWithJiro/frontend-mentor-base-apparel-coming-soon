@@ -76,7 +76,7 @@ const Form = () => {
     setEmail(inputEmail);
   };
   const handleFocus = () => {
-    if (status === "error") {
+    if (status === "warning" || status === "error") {
       setStatus("idle");
     }
   };

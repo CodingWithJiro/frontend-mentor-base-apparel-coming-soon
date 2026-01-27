@@ -83,4 +83,24 @@ describe("Form", () => {
 
     expect(input).toHaveAttribute("aria-invalid", "true");
   });
+
+  test("clears error state when user focuses back on input", async () => {
+    const user = userEvent.setup();
+
+    render(<Form />);
+
+    const input = screen.getByLabelText(/email address/i);
+
+    await user.type(input, "incorrect@email{Enter}");
+
+    const errorMessage = await screen.findByText(
+      /please provide a valid email/i,
+    );
+
+    expect(errorMessage).toBeInTheDocument();
+
+    await user.click(input);
+
+    expect(errorMessage).not.toBeInTheDocument();
+  });
 });

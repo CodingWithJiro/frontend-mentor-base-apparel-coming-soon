@@ -1,4 +1,5 @@
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import ThemeButton from "./ThemeButton";
 
 describe("ThemeButton", () => {
@@ -18,5 +19,18 @@ describe("ThemeButton", () => {
 
     expect(button).toHaveAttribute("aria-label", "Switch to light theme");
     expect(button).toHaveAttribute("aria-pressed", "true");
+  });
+
+  test("calls onThemeChange when button is clicked", async () => {
+    const user = userEvent.setup();
+    const onThemeChange = vi.fn();
+
+    render(<ThemeButton onThemeChange={onThemeChange} />);
+
+    const button = screen.getByRole("button");
+
+    await user.click(button);
+
+    expect(onThemeChange).toHaveBeenCalledTimes(1);
   });
 });

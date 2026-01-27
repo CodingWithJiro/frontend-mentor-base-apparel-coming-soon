@@ -40,7 +40,7 @@ const InputEmail = ({
         onFocus={onFocus}
         onBlur={onBlur}
         onAnimationEnd={onAnimationEnd}
-        aria-invalid={status === "error"}
+        aria-invalid={status === "warning" || status === "error"}
         aria-describedby={getAriaDescribedBy()}
         placeholder="Email Address"
         disabled={status === "loading"}

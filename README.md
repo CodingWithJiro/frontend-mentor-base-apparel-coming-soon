@@ -23,7 +23,7 @@
 ![Dynamic Content](https://img.shields.io/badge/Dynamic%20Content-Available-673ab7?style=for-the-badge)
 [![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](/docs/downloads/lighthouse-performance-report.pdf)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/05989f39-72d3-4911-94f9-af51ec16ab53/deploy-status)](https://app.netlify.com/projects/base-apparel-fm-jiro/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05989f39-72d3-4911-94f9-af51ec16ab53/deploy-status)](https://base-apparel-fm-jiro.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%2010-blue)
 ![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.frontend-mentor-base-apparel-coming-soon&left_text=repo%20views)

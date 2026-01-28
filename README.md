@@ -177,5 +177,3 @@ Created by **Elmar Chavez**
 Month/Year: **January 2026**
 
 Journey: **10<sup>th</sup>** month of learning _frontend web development_.
-
-<!-- TODO: UPDATE DOCUMENTATION, SHOW NEW TOOLS, FINISH BEFORE JANUARY 31, POST IN LINKEDIN AFTER, SHARE STRUGGLES, AND THE LONG HIATUS WAS LEARNING REACT AND TAILWIND AND TESTING  -->

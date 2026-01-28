@@ -29,10 +29,10 @@
 
 ## Base Apparel Announcements Email Subscription Page
 
-| _Mobile Preview (375x812)_                                  | _Desktop Preview (1440x960)_                                   |
+| _Mobile Preview (375x800)_                                  | _Desktop Preview (1440x800)_                                   |
 | ----------------------------------------------------------- | -------------------------------------------------------------- |
-| ![Mobile](/public/img/site-preview-mobile_375x812.png)      | ![Desktop](/public/img/site-preview-desktop_1440x960.png)      |
-| ![Mobile](/public/img/site-preview-mobile-dark_375x812.png) | ![Desktop](/public/img/site-preview-desktop-dark_1440x960.png) |
+| ![Mobile](/public/img/site-preview-mobile_375x800.png)      | ![Desktop](/public/img/site-preview-desktop_1440x800.png)      |
+| ![Mobile](/public/img/site-preview-mobile-dark_375x800.png) | ![Desktop](/public/img/site-preview-desktop-dark_1440x800.png) |
 
 A responsive email subscription landing page built with React + Tailwind CSS, featuring client-side form validation and comprehensive component testing.
 

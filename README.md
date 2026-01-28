@@ -131,13 +131,13 @@ _This ensures I maintain a professional workflow, even as a solo developer._
 2. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/CodingWithJiro/frontend-mentor-base-apparel-coming-soon.git
 ```
 
 3. Navigate to the project directory
 
 ```bash
-cd REPO_NAME
+cd frontend-mentor-base-apparel-coming-soon
 ```
 
 4. Install dependencies

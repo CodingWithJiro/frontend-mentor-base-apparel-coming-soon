@@ -77,7 +77,15 @@ _This ensures I maintain a professional workflow, even as a solo developer._
 
 ## What I Learned
 
-INSERT LIST OF WHAT I LEARNED MAKING THIS PROJECT
+- Installing the project dependencies such as React and Tailwind CSS libraries
+- Familiarized myself into the initial scaffolding of a Vite + React project
+- Gained experience on tweaking config files
+- Managing form state and validation using React hooks
+- Using `onFocus` and `onBlur` correctly to improve UX
+- Translating native browser focus behavior into predictable React logic
+- First time writing user-centric tests with **[Vitest](https://vitest.dev)** and **[React Testing Library](https://testing-library.com)**
+- Avoiding brittle tests by testing behavior instead of implementation
+- Applying Tailwind utility classes for interactive and accessible states
 
 ---
 

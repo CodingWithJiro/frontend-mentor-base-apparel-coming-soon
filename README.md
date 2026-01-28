@@ -158,7 +158,7 @@ npm run dev
 
 ## Live Demo
 
-Or you can check out the **[live website here](LINK)**
+Or you can check out the **[live website here](https://base-apparel-fm-jiro.netlify.app/)**
 
 ---
 

@@ -44,7 +44,7 @@ Created as part of the building challenges from **[Frontend Mentor](https://www.
 
 This is my first project that uses a modern **[React](https://react.dev)** + **[Tailwind CSS](https://tailwindcss.com)** implementation completing Frontend Mentor's **[Base Apparel Coming Soon challenge](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)**.
 
-The focus of this project was placed on form behavior, user experience, accessibility, and testing beyond layout and styling,
+The focus of this project was placed on form behavior, user experience, accessibility, and testing beyond layout and styling.
 
 ---
 

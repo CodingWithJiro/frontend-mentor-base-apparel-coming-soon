@@ -34,7 +34,7 @@
 | ![Mobile](/public/img/site-preview-mobile_375x812.png)      | ![Desktop](/public/img/site-preview-desktop_1440x960.png)      |
 | ![Mobile](/public/img/site-preview-mobile-dark_375x812.png) | ![Desktop](/public/img/site-preview-desktop-dark_1440x960.png) |
 
-INSERT A BRIEF DESCRIPTION OF THE PROJECT
+A responsive email subscription landing page built with React + Tailwind CSS, featuring client-side form validation and comprehensive component testing.
 
 Created as part of the building challenges from **[Frontend Mentor](https://www.frontendmentor.io/)**.
 

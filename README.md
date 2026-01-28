@@ -50,7 +50,14 @@ The focus of this project was placed on form behavior, user experience, accessib
 
 ## Features
 
-INSERT LIST OF PROJECT FEATURES
+- Controlled email input with client-side validation using **[React](https://react.dev)**
+- Responsive layout optimized for mobile and desktop using **[Tailwind CSS](https://tailwindcss.com)**
+- Error handling triggered on meaningful user interactions
+- Accessible form markup with semantic HTML
+- Keyboard-friendly focus management
+- Component-level tests using **[Vitest](https://vitest.dev)** and **[React Testing Library](https://testing-library.com)**
+- Production deployment with performance auditing
+- Light and dark mode support
 
 ---
 

@@ -100,6 +100,11 @@ _This ensures I maintain a professional workflow, even as a solo developer._
 - React
 - Tailwind CSS
 
+## Testing
+
+- Vitest
+- React Testing Library
+
 ## Tooling & Build
 
 - Vite

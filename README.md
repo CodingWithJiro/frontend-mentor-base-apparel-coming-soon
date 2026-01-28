@@ -162,6 +162,18 @@ Or you can check out the **[live website here](LINK)**
 
 ---
 
+## Testing
+
+**[Vitest](https://vitest.dev)** and **[React Testing Library](https://testing-library.com)** were used to run component tests focused on user interactions such as typing, focus changes, and form validation.
+
+You can run the test suite with:
+
+```bash
+npm test
+```
+
+---
+
 ## Performance Report
 
 [![Lighthouse Report Preview](public/img/lighthouse-report.png)](docs/downloads/lighthouse-performance-report.pdf)
